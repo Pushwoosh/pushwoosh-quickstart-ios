@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Pushwoosh",
+        "repositoryURL": "https://github.com/Pushwoosh/Pushwoosh-XCFramework",
+        "state": {
+          "branch": "master",
+          "revision": "0f0c4a38b6e2bb2d9e5adde7168364f9e5e50236",
+          "version": null
+        }
+      },
+      {
+        "package": "PushwooshGeozones",
+        "repositoryURL": "https://github.com/Pushwoosh/PushwooshGeozones-XCFramework",
+        "state": {
+          "branch": "master",
+          "revision": "5cf29e976f4a854a8a65eff12426b146530f0766",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
