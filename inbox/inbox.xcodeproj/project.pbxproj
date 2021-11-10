@@ -16,6 +16,7 @@
 		9795959F271C30A400046A53 /* PushwooshInboxUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9795959D271C30A400046A53 /* PushwooshInboxUI.framework */; };
 		979595A0271C30A400046A53 /* PushwooshInboxBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9795959E271C30A400046A53 /* PushwooshInboxBundle.bundle */; };
 		979595A2271C32C400046A53 /* CustomInboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979595A1271C32C400046A53 /* CustomInboxViewController.swift */; };
+		97C48984273C0F6F00CFF211 /* PushwooshInboxUI in Frameworks */ = {isa = PBXBuildFile; productRef = 97C48983273C0F6F00CFF211 /* PushwooshInboxUI */; };
 		97DE9F2927352BC2000241E3 /* Pushwoosh in Frameworks */ = {isa = PBXBuildFile; productRef = 97DE9F2827352BC2000241E3 /* Pushwoosh */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 			files = (
 				9795959F271C30A400046A53 /* PushwooshInboxUI.framework in Frameworks */,
 				97DE9F2927352BC2000241E3 /* Pushwoosh in Frameworks */,
+				97C48984273C0F6F00CFF211 /* PushwooshInboxUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +147,7 @@
 			name = inbox;
 			packageProductDependencies = (
 				97DE9F2827352BC2000241E3 /* Pushwoosh */,
+				97C48983273C0F6F00CFF211 /* PushwooshInboxUI */,
 			);
 			productName = inbox;
 			productReference = 97959577271C2AC400046A53 /* inbox.app */;
@@ -176,6 +179,7 @@
 			mainGroup = 9795956E271C2AC300046A53;
 			packageReferences = (
 				97DE9F2727352BC2000241E3 /* XCRemoteSwiftPackageReference "Pushwoosh-XCFramework" */,
+				97C48982273C0F6F00CFF211 /* XCRemoteSwiftPackageReference "PushwooshInboxUI-XCFramework" */,
 			);
 			productRefGroup = 97959578271C2AC400046A53 /* Products */;
 			projectDirPath = "";
@@ -453,6 +457,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		97C48982273C0F6F00CFF211 /* XCRemoteSwiftPackageReference "PushwooshInboxUI-XCFramework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Pushwoosh/PushwooshInboxUI-XCFramework";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		97DE9F2727352BC2000241E3 /* XCRemoteSwiftPackageReference "Pushwoosh-XCFramework" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Pushwoosh/Pushwoosh-XCFramework";
@@ -464,6 +476,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		97C48983273C0F6F00CFF211 /* PushwooshInboxUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 97C48982273C0F6F00CFF211 /* XCRemoteSwiftPackageReference "PushwooshInboxUI-XCFramework" */;
+			productName = PushwooshInboxUI;
+		};
 		97DE9F2827352BC2000241E3 /* Pushwoosh */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 97DE9F2727352BC2000241E3 /* XCRemoteSwiftPackageReference "Pushwoosh-XCFramework" */;
