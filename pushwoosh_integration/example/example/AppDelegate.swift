@@ -4,6 +4,13 @@
 //
 //  Created by Andrei Kiselev on 27.12.23..
 //
+/*
+ ******************************************************
+ * CHANGE <Pushwoosh_APPID>                           *
+ * VALUE IN THE INFO.PLIST FILE.                      *
+ * REPLACE XXXXX-XXXXX WITH YOUR APP ID PROJECT CODE. *
+ ******************************************************
+ */
 
 import UIKit
 /*
