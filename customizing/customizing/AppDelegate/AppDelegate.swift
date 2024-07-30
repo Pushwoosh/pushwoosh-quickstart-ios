@@ -25,38 +25,38 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PWMessagingDelegate {
         //-----------PUSHWOOSH PART-----------
         //initialization code
         //set custom delegate for push handling, in our case AppDelegate
-        Pushwoosh.sharedInstance()?.delegate = self;
+        Pushwoosh.sharedInstance().delegate = self;
         
         //register for push notifications
-        Pushwoosh.sharedInstance()?.registerForPushNotifications()
+        Pushwoosh.sharedInstance().registerForPushNotifications()
                 
         return true
     }
     
     //handle token received from APNS
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-        Pushwoosh.sharedInstance()?.handlePushRegistration(deviceToken)
+        Pushwoosh.sharedInstance().handlePushRegistration(deviceToken)
     }
     
     //handle token receiving error
     func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
-        Pushwoosh.sharedInstance()?.handlePushRegistrationFailure(error);
+        Pushwoosh.sharedInstance().handlePushRegistrationFailure(error);
     }
     
     //this is for iOS < 10 and for silent push notifications
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
-        Pushwoosh.sharedInstance()?.handlePushReceived(userInfo)
+        Pushwoosh.sharedInstance().handlePushReceived(userInfo)
         completionHandler(.noData)
     }
     
     //this event is fired when the push gets received
-    func pushwoosh(_ pushwoosh: Pushwoosh!, onMessageReceived message: PWMessage!) {
-        print("onMessageReceived: ", message.payload.description)
+    func pushwoosh(_ pushwoosh: Pushwoosh, onMessageReceived message: PWMessage) {
+        print("onMessageReceived: ", message.payload!.description)
     }
     
     //this event is fired when a user taps the notification
-    func pushwoosh(_ pushwoosh: Pushwoosh!, onMessageOpened message: PWMessage!) {
-        print("onMessageOpened: ", message.payload.description)
+    func pushwoosh(_ pushwoosh: Pushwoosh, onMessageOpened message: PWMessage) {
+        print("onMessageOpened: ", message.payload!.description)
         // TODO: - unwrapp correctly
         handleURL(url: URL(string: message.link!)!)
     }

@@ -1,25 +1,24 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "Pushwoosh",
-        "repositoryURL": "https://github.com/Pushwoosh/Pushwoosh-XCFramework",
-        "state": {
-          "branch": "master",
-          "revision": "0f0c4a38b6e2bb2d9e5adde7168364f9e5e50236",
-          "version": null
-        }
-      },
-      {
-        "package": "PushwooshGeozones",
-        "repositoryURL": "https://github.com/Pushwoosh/PushwooshGeozones-XCFramework",
-        "state": {
-          "branch": "master",
-          "revision": "5cf29e976f4a854a8a65eff12426b146530f0766",
-          "version": null
-        }
+  "originHash" : "dab0d4b438b7e4f317831f7abdb83d312867f4377e3b407e34ef9f86b0546c7f",
+  "pins" : [
+    {
+      "identity" : "pushwoosh-xcframework",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Pushwoosh/Pushwoosh-XCFramework",
+      "state" : {
+        "revision" : "436d5b2e79d444ac2833df55ea9b5331ee8e8844",
+        "version" : "6.5.14"
       }
-    ]
-  },
-  "version": 1
+    },
+    {
+      "identity" : "pushwooshgeozones-xcframework",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Pushwoosh/PushwooshGeozones-XCFramework",
+      "state" : {
+        "revision" : "c41f852dbce8a7bebe68726437ea82e84e7a555d",
+        "version" : "6.5.14"
+      }
+    }
+  ],
+  "version" : 3
 }

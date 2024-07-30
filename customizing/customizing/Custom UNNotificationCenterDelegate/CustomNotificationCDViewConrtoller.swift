@@ -20,7 +20,7 @@ class CustomNotificationCDViewConrtoller: UIViewController, UNUserNotificationCe
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        Pushwoosh.sharedInstance().notificationCenterDelegateProxy.add(self)
+        Pushwoosh.sharedInstance().notificationCenterDelegateProxy!.add(self)
     }
     
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {

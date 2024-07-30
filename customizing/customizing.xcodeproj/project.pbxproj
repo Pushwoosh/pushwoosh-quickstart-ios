@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		974FDC002735296D0062A12C /* Pushwoosh in Frameworks */ = {isa = PBXBuildFile; productRef = 974FDBFF2735296D0062A12C /* Pushwoosh */; };
-		974FDC032735297D0062A12C /* PushwooshGeozones in Frameworks */ = {isa = PBXBuildFile; productRef = 974FDC022735297D0062A12C /* PushwooshGeozones */; };
+		4478BBB82C57F17D00DDC21C /* Pushwoosh in Frameworks */ = {isa = PBXBuildFile; productRef = 4478BBB72C57F17D00DDC21C /* Pushwoosh */; };
+		4478BBBB2C57F18E00DDC21C /* PushwooshGeozones in Frameworks */ = {isa = PBXBuildFile; productRef = 4478BBBA2C57F18E00DDC21C /* PushwooshGeozones */; };
 		9760AA6F271DA501009C04B4 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9760AA6E271DA501009C04B4 /* StoreKit.framework */; };
 		9760AA72271DA769009C04B4 /* InAppTrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9760AA71271DA769009C04B4 /* InAppTrackingViewController.swift */; };
 		97636B78272168AF006A4C4D /* GeozonesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97636B77272168AF006A4C4D /* GeozonesViewController.swift */; };
@@ -48,9 +48,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				974FDC032735297D0062A12C /* PushwooshGeozones in Frameworks */,
+				4478BBBB2C57F18E00DDC21C /* PushwooshGeozones in Frameworks */,
 				9760AA6F271DA501009C04B4 /* StoreKit.framework in Frameworks */,
-				974FDC002735296D0062A12C /* Pushwoosh in Frameworks */,
+				4478BBB82C57F17D00DDC21C /* Pushwoosh in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,8 +176,8 @@
 			);
 			name = customizing;
 			packageProductDependencies = (
-				974FDBFF2735296D0062A12C /* Pushwoosh */,
-				974FDC022735297D0062A12C /* PushwooshGeozones */,
+				4478BBB72C57F17D00DDC21C /* Pushwoosh */,
+				4478BBBA2C57F18E00DDC21C /* PushwooshGeozones */,
 			);
 			productName = customizing;
 			productReference = 979596B3271C62D600046A53 /* customizing.app */;
@@ -208,8 +208,8 @@
 			);
 			mainGroup = 979596AA271C62D600046A53;
 			packageReferences = (
-				974FDBFE2735296D0062A12C /* XCRemoteSwiftPackageReference "Pushwoosh-XCFramework" */,
-				974FDC012735297D0062A12C /* XCRemoteSwiftPackageReference "PushwooshGeozones-XCFramework" */,
+				4478BBB62C57F17D00DDC21C /* XCRemoteSwiftPackageReference "Pushwoosh-XCFramework" */,
+				4478BBB92C57F18E00DDC21C /* XCRemoteSwiftPackageReference "PushwooshGeozones-XCFramework" */,
 			);
 			productRefGroup = 979596B4271C62D600046A53 /* Products */;
 			projectDirPath = "";
@@ -394,6 +394,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = customizing/customizing.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
@@ -434,6 +435,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = customizing/customizing.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
@@ -492,33 +494,33 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		974FDBFE2735296D0062A12C /* XCRemoteSwiftPackageReference "Pushwoosh-XCFramework" */ = {
+		4478BBB62C57F17D00DDC21C /* XCRemoteSwiftPackageReference "Pushwoosh-XCFramework" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Pushwoosh/Pushwoosh-XCFramework";
 			requirement = {
-				branch = master;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.14;
 			};
 		};
-		974FDC012735297D0062A12C /* XCRemoteSwiftPackageReference "PushwooshGeozones-XCFramework" */ = {
+		4478BBB92C57F18E00DDC21C /* XCRemoteSwiftPackageReference "PushwooshGeozones-XCFramework" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Pushwoosh/PushwooshGeozones-XCFramework";
 			requirement = {
-				branch = master;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.14;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		974FDBFF2735296D0062A12C /* Pushwoosh */ = {
+		4478BBB72C57F17D00DDC21C /* Pushwoosh */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 974FDBFE2735296D0062A12C /* XCRemoteSwiftPackageReference "Pushwoosh-XCFramework" */;
+			package = 4478BBB62C57F17D00DDC21C /* XCRemoteSwiftPackageReference "Pushwoosh-XCFramework" */;
 			productName = Pushwoosh;
 		};
-		974FDC022735297D0062A12C /* PushwooshGeozones */ = {
+		4478BBBA2C57F18E00DDC21C /* PushwooshGeozones */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 974FDC012735297D0062A12C /* XCRemoteSwiftPackageReference "PushwooshGeozones-XCFramework" */;
+			package = 4478BBB92C57F18E00DDC21C /* XCRemoteSwiftPackageReference "PushwooshGeozones-XCFramework" */;
 			productName = PushwooshGeozones;
 		};
 /* End XCSwiftPackageProductDependency section */
