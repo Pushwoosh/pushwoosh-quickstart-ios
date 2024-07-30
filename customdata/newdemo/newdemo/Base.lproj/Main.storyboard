@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,11 +13,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="newdemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="OdI-xT-VIF">
-                                <rect key="frame" x="76" y="681" width="222" height="97"/>
+                                <rect key="frame" x="76" y="690" width="240" height="128"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -34,22 +34,110 @@
             </objects>
             <point key="canvasLocation" x="135.1145038167939" y="3.5211267605633805"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Spi-f3-m1G">
+            <objects>
+                <viewController storyboardIdentifier="a_vc" id="dos-r6-8fX" customClass="AViewController" customModule="newdemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7rb-7h-koB">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A/B TESTING" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqs-uq-LFc">
+                                <rect key="frame" x="16" y="112" width="361" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="xBm-YT-6Ia"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Htb-wb-eYw">
+                                <rect key="frame" x="16" y="191" width="361" height="228"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="agH-xb-HUL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fqs-uq-LFc" firstAttribute="trailing" secondItem="7rb-7h-koB" secondAttribute="trailingMargin" id="76J-4Y-VgE"/>
+                            <constraint firstItem="fqs-uq-LFc" firstAttribute="leading" secondItem="Htb-wb-eYw" secondAttribute="leading" id="SA8-he-kIJ"/>
+                            <constraint firstItem="fqs-uq-LFc" firstAttribute="leading" secondItem="7rb-7h-koB" secondAttribute="leadingMargin" id="Sq3-Mz-hNr"/>
+                            <constraint firstItem="fqs-uq-LFc" firstAttribute="top" secondItem="agH-xb-HUL" secondAttribute="top" constant="53" id="hXs-xd-OJe"/>
+                            <constraint firstItem="Htb-wb-eYw" firstAttribute="top" secondItem="fqs-uq-LFc" secondAttribute="bottom" constant="8" id="lw3-hJ-Aeo"/>
+                            <constraint firstItem="agH-xb-HUL" firstAttribute="bottom" secondItem="Htb-wb-eYw" secondAttribute="bottom" constant="399" id="qhf-YX-KFA"/>
+                            <constraint firstItem="fqs-uq-LFc" firstAttribute="trailing" secondItem="Htb-wb-eYw" secondAttribute="trailing" id="sAB-fm-AbZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="titleLabelA" destination="Htb-wb-eYw" id="XUH-sL-tcU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8dO-hB-Ie6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="724.8768472906404"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="nGJ-2b-pvZ">
+            <objects>
+                <viewController storyboardIdentifier="b_vc" id="sQJ-TP-mYU" customClass="BViewController" customModule="newdemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bLW-eS-oDb">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A/B TESTING" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QQT-mw-pE8">
+                                <rect key="frame" x="16" y="118" width="361" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="zv6-Vm-rhp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YRM-HT-Vef">
+                                <rect key="frame" x="16" y="197" width="361" height="228"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yXF-HM-lMI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QQT-mw-pE8" firstAttribute="trailing" secondItem="YRM-HT-Vef" secondAttribute="trailing" id="1eJ-Jr-kVI"/>
+                            <constraint firstItem="QQT-mw-pE8" firstAttribute="leading" secondItem="bLW-eS-oDb" secondAttribute="leadingMargin" id="1zN-WV-w15"/>
+                            <constraint firstItem="QQT-mw-pE8" firstAttribute="top" secondItem="yXF-HM-lMI" secondAttribute="top" constant="59" id="5Gb-9E-ma2"/>
+                            <constraint firstItem="yXF-HM-lMI" firstAttribute="bottom" secondItem="YRM-HT-Vef" secondAttribute="bottom" constant="393" id="8q1-uA-yVJ"/>
+                            <constraint firstItem="YRM-HT-Vef" firstAttribute="top" secondItem="QQT-mw-pE8" secondAttribute="bottom" constant="8" id="QiI-k3-vVm"/>
+                            <constraint firstItem="QQT-mw-pE8" firstAttribute="leading" secondItem="YRM-HT-Vef" secondAttribute="leading" id="dYq-tT-g7B"/>
+                            <constraint firstItem="QQT-mw-pE8" firstAttribute="trailing" secondItem="bLW-eS-oDb" secondAttribute="trailingMargin" id="rcx-i6-Cvx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="titleLabelB" destination="YRM-HT-Vef" id="Ut9-pa-5md"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5KO-zb-bWJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1037" y="725"/>
+        </scene>
         <!--Custom Page View Controller-->
         <scene sceneID="utS-wy-U4K">
             <objects>
                 <viewController storyboardIdentifier="custom_page" id="yG5-fn-Toi" customClass="CustomPageViewController" customModule="newdemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ePk-RX-Sg9">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pWu-Z2-RNX">
-                                <rect key="frame" x="16" y="50" width="343" height="728"/>
+                                <rect key="frame" x="16" y="59" width="361" height="759"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0jq-j5-mZc">
-                                <rect key="frame" x="112" y="88" width="151" height="38"/>
+                                <rect key="frame" x="112" y="97" width="169" height="38"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Redeem!">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
