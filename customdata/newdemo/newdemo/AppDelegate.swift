@@ -22,6 +22,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //register for push notifications
         Pushwoosh.sharedInstance().registerForPushNotifications()
         
+        if let launchOptions = launchOptions {
+            Pushwoosh.sharedInstance().handlePushReceived(launchOptions)
+        }
+        
         return true
     }
 
