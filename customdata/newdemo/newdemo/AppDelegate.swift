@@ -14,12 +14,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let viewController = ViewController()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        //-----------PUSHWOOSH PART-----------
-        //initialization code
-        //set custom delegate for push handling, in our case self.viewController
+        /**
+         PUSHWOOSH PART
+         initialization code
+         set custom delegate for push handling, in our case self.viewController
+         */
         Pushwoosh.sharedInstance().delegate = self.viewController
         
-        //register for push notifications
+        /**
+         register for push notifications
+         */
         Pushwoosh.sharedInstance().registerForPushNotifications()
         
         if let launchOptions = launchOptions {
