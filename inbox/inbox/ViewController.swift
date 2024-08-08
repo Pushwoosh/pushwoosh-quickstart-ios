@@ -62,6 +62,9 @@ class ViewController: UIViewController {
         navigationViewController.navigationBar.backgroundColor = .white
         let cancelBarButtonItem = UIBarButtonItem.init(barButtonSystemItem: .cancel, target: self, action: #selector(ViewController.cancelButtomActionOnPress))
         customInboxViewController.navigationItem.leftBarButtonItem = cancelBarButtonItem
+        customInboxViewController.onMessageClickBlock = { message in
+            print("Message pressed")
+        }
         present(navigationViewController, animated: true, completion: nil)
     }
     
@@ -184,9 +187,10 @@ class ViewController: UIViewController {
             textField.text = ""
         }
         alert.addAction(UIAlertAction(title: "Set", style: .default, handler: { [weak alert] (_) in
-            let textField = alert?.textFields![0]
-            Pushwoosh.sharedInstance().setUserId(textField?.text) { error in
-                self.updateInboxForNewUser(userId: textField?.text ?? "000000")
+            guard let textField = alert?.textFields?.first else { return }
+            let userId = textField.text ?? "000000"
+            Pushwoosh.sharedInstance().setUserId(userId) { error in
+                self.updateInboxForNewUser(userId: userId)
             }
         }))
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
