@@ -1,0 +1,6 @@
+[submodule "Modules"]
+	path = Modules
+	url = https://github.com/Pushwoosh/pushwoosh-inbox-ui-ios-sdk.git
+[submodule "Module_ios"]
+	path = Module_ios
+	url = https://github.com/Pushwoosh/pushwoosh-ios-sdk.git
