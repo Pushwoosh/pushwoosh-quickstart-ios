@@ -31,7 +31,9 @@ class ChainedRichMediaPresentingDelegate: NSObject, PWRichMediaPresentingDelegat
     }
     
     func richMediaManager(_ richMediaManager: PWRichMediaManager!, shouldPresent richMedia: PWRichMedia!) -> Bool {
-        queue.append(richMedia)
+        if !queue.contains(where: { $0 === richMedia }) {
+            queue.append(richMedia)
+        }
         return !inAppIsPresenting
     }
     
