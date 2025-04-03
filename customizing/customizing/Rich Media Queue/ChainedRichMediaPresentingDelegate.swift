@@ -49,7 +49,13 @@ class ChainedRichMediaPresentingDelegate: NSObject, PWRichMediaPresentingDelegat
         }
         
         if ((queue.count) != 0) {
-            PWRichMediaManager.shared().present(queue.first)
+            PWModalWindowConfiguration.shared().presentModalWindow(queue.first!)
+            /**
+             If you are using the new modal rich media, use:
+             ```PWModalWindowConfiguration.shared().presentModalWindow(queue.first!)```
+             For legacy rich media, use:
+             ```PWRichMediaManager.shared().present(queue.first)```
+             */
         }
     }
     
