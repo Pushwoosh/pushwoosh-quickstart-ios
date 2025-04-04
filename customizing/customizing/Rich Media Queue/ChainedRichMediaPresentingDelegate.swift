@@ -13,7 +13,7 @@
  */
 
 import UIKit
-import Pushwoosh
+import PushwooshFramework
 
 class ChainedRichMediaPresentingDelegate: NSObject, PWRichMediaPresentingDelegate {
     
@@ -49,15 +49,20 @@ class ChainedRichMediaPresentingDelegate: NSObject, PWRichMediaPresentingDelegat
         }
         
         if ((queue.count) != 0) {
-            PWModalWindowConfiguration.shared().presentModalWindow(queue.first!)
-            /**
-             If you are using the new modal rich media, use:
-             ```PWModalWindowConfiguration.shared().presentModalWindow(queue.first!)```
-             For legacy rich media, use:
-             ```PWRichMediaManager.shared().present(queue.first)```
-             */
+            if let nextRichMedia = queue.first {
+                PWModalWindowConfiguration.shared().presentModalWindow(nextRichMedia)
+                /**
+                 If you are using the new modal rich media, use:
+                 ```
+                 PWModalWindowConfiguration.shared().presentModalWindow(nextRichMedia)
+                 ```
+                 For legacy rich media, use:
+                 ```
+                 PWRichMediaManager.shared().present(nextRichMedia)
+                 ```
+                 */
+            }
         }
-    }
     
     func richMediaManager(_ richMediaManager: PWRichMediaManager!, presentingDidFailFor richMedia: PWRichMedia!, withError error: Error!) {
         self.richMediaManager(richMediaManager, didClose: richMedia)
