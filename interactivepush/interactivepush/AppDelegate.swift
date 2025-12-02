@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import Pushwoosh
+import PushwooshFramework
 
 /*
  ******************************************************
@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PWMessagingDelegate, UNUs
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        Pushwoosh.sharedInstance().registerForPushNotifications()
+        Pushwoosh.configure.registerForPushNotifications()
         Pushwoosh.sharedInstance().delegate = self
         
         let customDelegate = CustomDelegate()
@@ -32,11 +32,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PWMessagingDelegate, UNUs
     }
     
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-        Pushwoosh.sharedInstance().handlePushRegistration(deviceToken)
+        Pushwoosh.configure.handlePushRegistration(deviceToken)
     }
     
     func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: any Error) {
-        Pushwoosh.sharedInstance().handlePushRegistrationFailure(error)
+        Pushwoosh.configure.handlePushRegistrationFailure(error)
     }
     
     func pushwoosh(_ pushwoosh: Pushwoosh, onMessageOpened message: PWMessage) {

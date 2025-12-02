@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		974FDBFA273527600062A12C /* Pushwoosh in Frameworks */ = {isa = PBXBuildFile; productRef = 974FDBF9273527600062A12C /* Pushwoosh */; };
+		4488D0E42EDF1ED3005B798B /* PushwooshBridge in Frameworks */ = {isa = PBXBuildFile; productRef = 4488D0E32EDF1ED3005B798B /* PushwooshBridge */; };
+		4488D0E62EDF1ED3005B798B /* PushwooshCore in Frameworks */ = {isa = PBXBuildFile; productRef = 4488D0E52EDF1ED3005B798B /* PushwooshCore */; };
+		4488D0E82EDF1ED3005B798B /* PushwooshFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 4488D0E72EDF1ED3005B798B /* PushwooshFramework */; };
+		4488D0EA2EDF1ED3005B798B /* PushwooshLiveActivities in Frameworks */ = {isa = PBXBuildFile; productRef = 4488D0E92EDF1ED3005B798B /* PushwooshLiveActivities */; };
 		97636BBD2721A331006A4C4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97636BBC2721A331006A4C4D /* AppDelegate.swift */; };
 		97636BBF2721A331006A4C4D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97636BBE2721A331006A4C4D /* SceneDelegate.swift */; };
 		97636BC12721A331006A4C4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97636BC02721A331006A4C4D /* ViewController.swift */; };
@@ -62,7 +65,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				974FDBFA273527600062A12C /* Pushwoosh in Frameworks */,
+				4488D0EA2EDF1ED3005B798B /* PushwooshLiveActivities in Frameworks */,
+				4488D0E62EDF1ED3005B798B /* PushwooshCore in Frameworks */,
+				4488D0E42EDF1ED3005B798B /* PushwooshBridge in Frameworks */,
+				4488D0E82EDF1ED3005B798B /* PushwooshFramework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,7 +159,10 @@
 			);
 			name = deliverytracking;
 			packageProductDependencies = (
-				974FDBF9273527600062A12C /* Pushwoosh */,
+				4488D0E32EDF1ED3005B798B /* PushwooshBridge */,
+				4488D0E52EDF1ED3005B798B /* PushwooshCore */,
+				4488D0E72EDF1ED3005B798B /* PushwooshFramework */,
+				4488D0E92EDF1ED3005B798B /* PushwooshLiveActivities */,
 			);
 			productName = deliverytracking;
 			productReference = 97636BB92721A331006A4C4D /* deliverytracking.app */;
@@ -204,7 +213,7 @@
 			);
 			mainGroup = 97636BB02721A331006A4C4D;
 			packageReferences = (
-				974FDBF8273527600062A12C /* XCRemoteSwiftPackageReference "Pushwoosh-XCFramework" */,
+				4488D0E22EDF1ED3005B798B /* XCRemoteSwiftPackageReference "Pushwoosh-XCFramework" */,
 			);
 			productRefGroup = 97636BBA2721A331006A4C4D /* Products */;
 			projectDirPath = "";
@@ -564,21 +573,36 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		974FDBF8273527600062A12C /* XCRemoteSwiftPackageReference "Pushwoosh-XCFramework" */ = {
+		4488D0E22EDF1ED3005B798B /* XCRemoteSwiftPackageReference "Pushwoosh-XCFramework" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Pushwoosh/Pushwoosh-XCFramework";
 			requirement = {
-				branch = master;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.8;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		974FDBF9273527600062A12C /* Pushwoosh */ = {
+		4488D0E32EDF1ED3005B798B /* PushwooshBridge */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 974FDBF8273527600062A12C /* XCRemoteSwiftPackageReference "Pushwoosh-XCFramework" */;
-			productName = Pushwoosh;
+			package = 4488D0E22EDF1ED3005B798B /* XCRemoteSwiftPackageReference "Pushwoosh-XCFramework" */;
+			productName = PushwooshBridge;
+		};
+		4488D0E52EDF1ED3005B798B /* PushwooshCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4488D0E22EDF1ED3005B798B /* XCRemoteSwiftPackageReference "Pushwoosh-XCFramework" */;
+			productName = PushwooshCore;
+		};
+		4488D0E72EDF1ED3005B798B /* PushwooshFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4488D0E22EDF1ED3005B798B /* XCRemoteSwiftPackageReference "Pushwoosh-XCFramework" */;
+			productName = PushwooshFramework;
+		};
+		4488D0E92EDF1ED3005B798B /* PushwooshLiveActivities */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4488D0E22EDF1ED3005B798B /* XCRemoteSwiftPackageReference "Pushwoosh-XCFramework" */;
+			productName = PushwooshLiveActivities;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

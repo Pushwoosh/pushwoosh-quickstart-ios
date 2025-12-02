@@ -498,16 +498,16 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Pushwoosh/Pushwoosh-XCFramework";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 6.5.14;
+				kind = exactVersion;
+				version = 7.0.4;
 			};
 		};
 		4478BBB92C57F18E00DDC21C /* XCRemoteSwiftPackageReference "PushwooshGeozones-XCFramework" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Pushwoosh/PushwooshGeozones-XCFramework";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 6.5.14;
+				kind = exactVersion;
+				version = 7.0.4;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

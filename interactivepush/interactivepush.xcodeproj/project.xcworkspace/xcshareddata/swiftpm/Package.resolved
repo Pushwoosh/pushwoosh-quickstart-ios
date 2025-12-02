@@ -6,8 +6,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Pushwoosh/Pushwoosh-XCFramework",
       "state" : {
-        "revision" : "82d667c4b2e525092bdf5c78bd7b55550b3c40c9",
-        "version" : "6.6.0"
+        "revision" : "982c72e6989fc3f9a81ba4bb4087eb0bf3ae70ca",
+        "version" : "7.0.8"
       }
     }
   ],

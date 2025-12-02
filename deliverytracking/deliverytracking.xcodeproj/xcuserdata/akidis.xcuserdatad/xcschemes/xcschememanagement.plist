@@ -4,35 +4,25 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>ContentExtension.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
-		</dict>
-		<key>ServiceExtension.xcscheme_^#shared#^_</key>
+		<key>NotificationService.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>customBanner.xcscheme_^#shared#^_</key>
+		<key>deliverytracking.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>1</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>44E0C1502ECCA5FD004AFD5A</key>
+		<key>97636BB82721A331006A4C4D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>44E0C1622ECCA622004AFD5A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>44E0C1992ECCC407004AFD5A</key>
+		<key>97636BDD2721A741006A4C4D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

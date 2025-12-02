@@ -13,7 +13,7 @@
  */
 
 import UserNotifications
-import Pushwoosh
+import PushwooshFramework
 
 class NotificationService: UNNotificationServiceExtension {
 

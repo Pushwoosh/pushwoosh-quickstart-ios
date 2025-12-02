@@ -6,8 +6,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Pushwoosh/Pushwoosh-XCFramework",
       "state" : {
-        "revision" : "436d5b2e79d444ac2833df55ea9b5331ee8e8844",
-        "version" : "6.5.14"
+        "revision" : "e192069b06df03b6b3db4c9ccd94903f0d46d863",
+        "version" : "7.0.4"
       }
     },
     {
@@ -15,8 +15,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Pushwoosh/PushwooshGeozones-XCFramework",
       "state" : {
-        "revision" : "c41f852dbce8a7bebe68726437ea82e84e7a555d",
-        "version" : "6.5.14"
+        "revision" : "f921c10cdcd95418055e9037a9aaf6711270c744",
+        "version" : "7.0.4"
       }
     }
   ],

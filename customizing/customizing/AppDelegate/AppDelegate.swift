@@ -13,7 +13,7 @@
  */
 
 import UIKit
-import Pushwoosh
+import PushwooshFramework
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate, PWMessagingDelegate {
@@ -25,27 +25,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PWMessagingDelegate {
         //-----------PUSHWOOSH PART-----------
         //initialization code
         //set custom delegate for push handling, in our case AppDelegate
-        Pushwoosh.sharedInstance().delegate = self;
+        Pushwoosh.configure.delegate = self;
         
         //register for push notifications
-        Pushwoosh.sharedInstance().registerForPushNotifications()
+        Pushwoosh.configure.registerForPushNotifications()
                 
         return true
     }
     
     //handle token received from APNS
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-        Pushwoosh.sharedInstance().handlePushRegistration(deviceToken)
+        Pushwoosh.configure.handlePushRegistration(deviceToken)
     }
     
     //handle token receiving error
     func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
-        Pushwoosh.sharedInstance().handlePushRegistrationFailure(error);
+        Pushwoosh.configure.handlePushRegistrationFailure(error);
     }
     
     //this is for iOS < 10 and for silent push notifications
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
-        Pushwoosh.sharedInstance().handlePushReceived(userInfo)
+        Pushwoosh.configure.handlePushReceived(userInfo)
         completionHandler(.noData)
     }
     
