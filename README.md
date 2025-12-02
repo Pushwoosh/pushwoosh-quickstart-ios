@@ -6,7 +6,7 @@ This repository hosts the Pushwoosh iOS SDK as an XCFramework based Swift Packag
 [![Documentation](https://img.shields.io/badge/docs-latest-brightgreen.svg?style=flat-square)](https://github.com/Pushwoosh/pushwoosh-ios-sdk/tree/master/Documentation)
 
 The guide for SDK integration is available on Pushwoosh website:
-https://www.pushwoosh.com/platform-docs/pushwoosh-sdk/ios-push-notifications/setting-up-pushwoosh-ios-sdk
+https://docs.pushwoosh.com/developer/pushwoosh-sdk/ios-sdk/
 
 Documentation: https://pushwoosh.github.io/pushwoosh-ios-sdk/
 
